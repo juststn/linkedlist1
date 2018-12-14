@@ -1,5 +1,6 @@
 #ifndef NODE_H
 #define NODE_H
+#include "student.h"
 
 #include <iostream>
 
@@ -10,7 +11,11 @@ class Node{
   Node(Student*);
   ~Node();
 
-  Node* setNext();
+  Student* getStudent();
+  Node* getNext();
   void setNext(Node*);
-  Node*next;
+private:
+  Student* sdt;
+  Node* next;
+};
 #endif

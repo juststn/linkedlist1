@@ -3,14 +3,23 @@
 
 using namespace std;
 
-Node::Node(){
-
+Node::Node(Student* newsdt){
+  sdt = newsdt;
+  next = NULL;
 }
 
 Node::~Node(){
-
+  delete sdt;
 }
 
-void Node*::getNext(Node* newNode){
+void Node::setNext(Node* newNode){
   next = newNode;
+}
+
+Node* Node::getNext(){
+  return next;
+}
+
+Student* Node::getStudent(){
+  return sdt;
 }

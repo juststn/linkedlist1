@@ -9,7 +9,3 @@ Student::Student(){
 
 Student::~Student(){
 }
-
-Student Student::getStudent(){
-  return student;
-}
